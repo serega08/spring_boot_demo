@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+     
+<head data-th-fragment="header">
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="/style.css" />
+        <title>Title</title>
+</head>
+ 
+<body>
+    <div>
+        <table class="box-table-a">
+            <caption>Demo spring</caption>
+            <thead>
+            <tr>
+                <th scope="col">Temp ID</th>
+                <th scope="col">Temp Name</th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr data-th-each="user : ${users}">
+                <td data-th-text="${user.id}">1</td>
+                <td data-th-text="${user.name}">Triple Butter</td>
+            </tr>
+            <tr data-th-remove="all">
+                <td>2</td>
+                <td>Iron Condor</td>
+                <td>High Prob Hedged</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>
