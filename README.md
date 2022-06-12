@@ -1,1 +1,2 @@
-# spring_boot_demo
+# About
+Demo project to demonstrate spring boot features
